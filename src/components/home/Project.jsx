@@ -17,7 +17,7 @@ const dummyProject = {
   img: null,
 };
 
-const imgs = [pomodoro, twentyfour, null, null, null];
+const imgs = [twentyfour, pomodoro, null, null, null];
 const API = "https://api.github.com";
 const org = "rice-apps";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";

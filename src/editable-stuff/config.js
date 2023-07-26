@@ -37,9 +37,8 @@ const about = {
   imageSize: 375,
   message:
     "Hello! I'm Anya Gu, a junior at Rice University studying Computer Science and Mathematics.",
-  resume:
-    // require("../editable-stuff/resume.pdf"),
-    "https://docs.google.com/document/d/16GQrBZ0vZKnIKoLpwZ7dt72i3PPGN3WqRv8AzasTkY8/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
+  // "https://docs.google.com/document/d/16GQrBZ0vZKnIKoLpwZ7dt72i3PPGN3WqRv8AzasTkY8/edit?usp=sharing",
 };
 
 // PROJECTS SECTION

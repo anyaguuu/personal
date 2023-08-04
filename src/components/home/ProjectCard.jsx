@@ -25,10 +25,8 @@ const ProjectCard = ({ value, img}) => {
               alt=""
               style={{
                 width: "100%",
-                height: "100%",
+                maxHeight: "500px",
                 objectFit: "cover",
-                // Optionally, you can set a max-height for the image to control its size within the card
-                // max-height: "200px",
               }}
             />
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>

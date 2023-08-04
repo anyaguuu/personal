@@ -3,17 +3,24 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
-import pomodoro from "./pomo.png";
+import img from "./pomo.png";
 
-const ProjectCard = ({ value, img}) => {
-  const {
-    name,
-    description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
-  } = value;
+const TeamProjectCard = () => {
+//   const {
+//     name,
+//     description,
+//     svn_url,
+//     stargazers_count,
+//     languages_url,
+//     pushed_at,
+//   } = value;
+  console.log("in team projects card");
+  const name = "Carpool-V3";
+  const description = "";
+  const svn_url = "https://github.com/rice-apps/Carpool-V3";
+  const languages_url = "https://api.github.com/repos/rice-apps/carpool-v3/languages";
+  console.log("THIS IS THE svn_url: " + svn_url);
+  console.log("REACHED HERE");
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
@@ -143,4 +150,4 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
   );
 };
 
-export default ProjectCard;
+export default TeamProjectCard;

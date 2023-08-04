@@ -63,7 +63,7 @@ const leadership = {
   show: true,
   heading: "Extracurriculars :)",
   message:
-    "Founder and President of Rice University Ice Skating Club. I am also ... ",
+    "🎉 I am the proud founder & President of the Rice University Ice Skating Club! ⛸️ Since its inception in 2021, our club has been making the holiday season extra special at Rice by hosting two popular Christmas events that have quickly become a cherished tradition among students. Check out the excitement and joy of our Christmas events here: https://www.youtube.com/watch?v=EWsLKGUdUhk&t=1s&ab_channel=RiceUniversity. You can also explore the President's holiday card featuring the club here: https://www.youtube.com/watch?v=3LPQBcuSOSQ&ab_channel=RiceUniversity! Beyond spreading holiday cheer, our club is dedicated to promoting the love of ice skating. We organize ice skating clinics and offer engaging lessons for students, ensuring they can have a wonderful time on the ice and improve their skills. But that's not all! My passion for dance shines through as I am also an active member of Rice University's BASYK dance team.🎊",
   images: [
     {
       img: require("../editable-stuff/anyagu.JPG"), // TODO: make this show up better

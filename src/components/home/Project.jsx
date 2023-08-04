@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
+import TeamProjectCard from "./TeamProjectCard";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
 import pomodoro from "./pomo.png";
@@ -23,7 +24,7 @@ const org = "rice-apps";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/anyagu/";
 
-const Project = ({ heading, username, length, specfic }) => {
+const Project = ({ heading, username, length, specfic, type }) => {
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const orgReposAPI = `${API}/orgs/${org}/repos`;
@@ -81,12 +82,19 @@ const Project = ({ heading, username, length, specfic }) => {
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
+              type ? 
               <ProjectCard
                 key={`project-card-${index}`}
                 id={`project-card-${index}`}
                 value={project}
                 img={imgs[index]}
               />
+              : <TeamProjectCard
+                key={`project-card-${index}`}
+                id={`project-card-${index}`}
+                // value={project}
+                // img={imgs[index]}
+                />
             ))
             : dummyProjectsArr.map((project, index) => (
               <ProjectCard

@@ -3,9 +3,9 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
-import pomodoro from "./pomo.png";
 
 const ProjectCard = ({ value, img}) => {
+  console.log("in project card");
   const {
     name,
     description,
@@ -19,7 +19,18 @@ const ProjectCard = ({ value, img}) => {
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-            <img src={img} alt="" style={{ width: '50vw', height: 'auto', marginLeft: '6vw'}}/>
+            {/* <img src={img} alt="" style={{ width: '50vw', height: 'auto', marginLeft: '6vw'}}/> */}
+            <img
+              src={img}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                // Optionally, you can set a max-height for the image to control its size within the card
+                // max-height: "200px",
+              }}
+            />
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
           {svn_url ? <CardButtons svn_url={svn_url} name={name}/> : <Skeleton count={2} />}
           <hr />

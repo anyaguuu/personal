@@ -85,10 +85,18 @@ const leadership = {
     </p>
   ),
   images: [
+    // {
+    //   img: require("../editable-stuff/anyagu.JPG"), // TODO: make this show up better
+    //   // label: "First slide label",
+    //   // paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+    //   size: {
+    //     width: "400",
+    //     height: "550",
+    //   },
+    // },
     {
-      img: require("../editable-stuff/anyagu.JPG"), // TODO: make this show up better
-      // label: "First slide label",
-      // paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      img: require("../editable-stuff/competition.png"),
+      // label: "Second slide label",
       size: {
         width: "400",
         height: "550",
@@ -110,21 +118,14 @@ const leadership = {
         height: "550",
       },
     },
-    {
-      img: require("../editable-stuff/competition.png"),
-      // label: "Second slide label",
-      size: {
-        width: "400",
-        height: "550",
-      },
-    },
-    {
-      img: require("../editable-stuff/skating_logo.JPG"),
-      size: {
-        width: "400",
-        height: "550",
-      },
-    },
+
+    // {
+    //   img: require("../editable-stuff/skating_logo.JPG"),
+    //   size: {
+    //     width: "400",
+    //     height: "550",
+    //   },
+    // },
   ],
   imageSize: {
     width: "400",

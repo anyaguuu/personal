@@ -6,18 +6,18 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1", // TODO: i think just one color lol (pink or blue or orange)
-  firstName: "Anya",
+  firstName: "Jenna",
   middleName: "",
   lastName: "Gu",
-  message: "TechSis in Texas 👩🏻‍💻 ",
+  message: "Shaping the Future With Code👩🏻‍💻 ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/anyaguuu",
+      url: "https://github.com/jennaguu",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/anya-g-769260182/",
+      url: "https://www.linkedin.com/in/jenna-gu-738060124/",
     },
     {
       image: "fa-youtube",
@@ -36,7 +36,7 @@ const about = {
   imageLink: require("../editable-stuff/anyagu.JPG"), // TODO: change
   imageSize: 375,
   message:
-    "Hello! I'm Anya Gu, a junior at Rice University studying Computer Science and Mathematics.",
+    "Hello! I'm Jenna Gu, a junior at Cornell University studying Computer Science and Mathematics.",
   resume: require("../editable-stuff/resume.pdf"),
   // "https://docs.google.com/document/d/16GQrBZ0vZKnIKoLpwZ7dt72i3PPGN3WqRv8AzasTkY8/edit?usp=sharing",
 };
@@ -49,7 +49,7 @@ const about = {
 const repos = {
   show: true,
   heading: "Passion Projects ⭐️",
-  gitHubUsername: "anyaguuu",
+  gitHubUsername: "jennaguu",
   reposLength: 5, // TODO: change this
   specificRepos: ["24", "pomodoro"],
 };
